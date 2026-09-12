@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>夜航书店 · 交互概念样例</title>
-<meta name="description" content="一个关于雨夜与书店的交互故事概念样例。纸间与夜读两种呈现，固定剧情、本地输入，无 AI 接口。">
+<meta name="description" content="一个关于雨夜与书店的交互故事概念样例。纸间与夜读两种呈现，可选择故事分支、展开正文并写下回应。">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23263e36'/%3E%3Cpath d='M12 16q12-4 20 5 8-9 20-5v34q-12-4-20 3-8-7-20-3zM32 21v32' fill='none' stroke='%23f7f5ef' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css"><script defer src="story.js"></script>
 </head>
@@ -26,7 +26,7 @@
     <div class="choices" id="choices" aria-label="选择下一步行动"></div>
     <div class="response-history" id="response-history" hidden><span>你写下的回应</span><p id="response-copy"></p><small>仅在当前页面展示，不上传，也不会触发自动回复。</small></div>
     <form id="response-form" class="response-form"><label class="sr-only" for="response">写下你的回应（本地演示）</label><input id="response" name="response" type="text" maxlength="500" autocomplete="off" placeholder="写下你的回应…" aria-describedby="demo-note"><button type="submit" id="send" aria-label="展示我的回应" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></button></form>
-    <p class="demo-note" id="demo-note">交互概念样例 · 固定剧情 · 本地输入 · 无 AI 接口</p>
+    <p class="demo-note" id="demo-note">交互概念样例 · 固定剧情 · 本页输入不保存</p>
     <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
   </section>
 </main>
